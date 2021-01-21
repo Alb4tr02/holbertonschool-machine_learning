@@ -9,7 +9,7 @@ def cat_matrices2D(mat1, mat2, axis=0):
     m1 = [row.copy() for row in mat1]
     m2 = [row.copy() for row in mat2]
     if (axis == 0 and len(m1[0]) != len(m2[0])
-            or axis == 1 and len(m1[0]) != len(m2)):
+            or axis == 1 and len(m1) != len(m2)):
         return None
     if axis == 0:
         m1.extend(m2)
