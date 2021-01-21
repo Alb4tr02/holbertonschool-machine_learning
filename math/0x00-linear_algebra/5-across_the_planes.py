@@ -7,6 +7,6 @@ def add_matrices2D(mat1, mat2):
        OUTPUT: two arrays element-wise added:
     """
     result_matrix = []
-    for i in len(mat1):
+    for i in range(len(mat1)):
         result_matrix.append([mat1[i][j] + mat2[i][j] for j in range(len(mat1[i]))])
     return result_matrix
