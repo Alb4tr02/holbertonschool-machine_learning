@@ -13,16 +13,15 @@ def poly_integral(poly, C=0):
         return None
     if type(poly[0]) is not int and type(poly[0]) is not float:
         return None
-
-    integration = [C] + [poly[i] / (i + 1) for i in range(len(poly))]
-    integration = [int(x) if x % 1 == 0 else x for x in integration]
     flag = True
-    integration.reverse()
     aux = []
-    for n in integration:
-        if n == 0 and flag:
+    for i in range(len(poly) - 1, -1, -1):
+        if poly[i] == 0 and flag:
             pass
         else:
-            aux.append(n)
+            aux.append(poly[i])
             flag = False
-    return aux.reverse()
+    aux.reverse()
+    integration = [C] + [aux[i] / (i + 1) for i in range(len(aux))]
+    integration = [int(x) if x % 1 == 0 else x for x in integration]
+    return integration
