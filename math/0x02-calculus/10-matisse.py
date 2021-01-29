@@ -7,7 +7,7 @@ def poly_derivative(poly):
     INPUT: polynomial
     OUTPUT derivative of the polynomial
     """
-    if poly == [] or type(poly) is not list:
+    if type(poly) is not list or len(poly) == 0:
         return None
 
     if type(poly[0]) is not int and type(poly[0]) is not float:
