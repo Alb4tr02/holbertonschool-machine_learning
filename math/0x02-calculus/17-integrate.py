@@ -18,9 +18,11 @@ def poly_integral(poly, C=0):
     integration = [int(x) if x % 1 == 0 else x for x in integration]
     flag = True
     integration.reverse()
+    aux = []
     for n in integration:
         if n == 0 and flag:
-            integration.remove(n)
+            pass
         else:
+            aux.append(n)
             flag = False
-    return integration.reverse()
+    return aux.reverse()
