@@ -15,5 +15,4 @@ def poly_derivative(poly):
 
     derivative = [poly[i] * i for i in range(len(poly))]
     derivative = derivative[1:] if len(derivative) > 1 else derivative
-    derivative = [0] if not any(derivative) else derivative
     return derivative
