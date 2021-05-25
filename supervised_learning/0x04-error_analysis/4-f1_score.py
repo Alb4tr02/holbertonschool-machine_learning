@@ -7,6 +7,6 @@ precision = __import__('2-precision').precision
 
 def f1_score(confusion):
     """Score"""
-
-    return 2 * precision(confusion) * sensitivity(confusion) /
-(precision(confusion) + sensitivity(confusion))
+    mul = precision(confusion) * sensitivity(confusion)
+    su = precision(confusion) + sensitivity(confusion)
+    return 2 * mul / su
