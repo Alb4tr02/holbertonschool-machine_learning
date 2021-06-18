@@ -10,7 +10,8 @@ transition_layer = __import__('6-transition_layer').transition_layer
 
 
 def densenet121(growth_rate=32, compression=1.0):
-    """this function builds the DenseNet-121 architecture as described in Densely Connected
+    """this function builds the DenseNet-121 architecture
+    as described in Densely Connected
     Convolutional Networks.
 
     Args:

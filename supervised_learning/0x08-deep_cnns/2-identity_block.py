@@ -7,7 +7,8 @@ import tensorflow.keras as K
 
 
 def identity_block(A_prev, filters):
-    """this function builds an identity block as described in Deep Residual Learning for
+    """this function builds an identity block as described
+    in Deep Residual Learning for
     Image Recognition (2015).
 
     Args:

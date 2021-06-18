@@ -7,7 +7,8 @@ import tensorflow.keras as K
 
 
 def transition_layer(X, nb_filters, compression):
-    """This function builds a transition layer as described in Densely Connected
+    """This function builds a transition layer as
+    described in Densely Connected
     Convolutional Networks.
 
     Args:
