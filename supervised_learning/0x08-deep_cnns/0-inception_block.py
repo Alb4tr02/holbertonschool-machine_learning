@@ -7,7 +7,7 @@ import tensorflow.keras as K
 
 
 def inception_block(A_prev, filters):
-    """This function builds an inception block as described in Going Deeper with
+    """builds an inception block as described in Going Deeper with
     Convolutions (2014).
 
     Args:
